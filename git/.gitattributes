@@ -1,0 +1,4 @@
+# normalize line endings 
+*.gitattributes text
+.gitignore text
+*.md text
