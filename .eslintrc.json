@@ -13,7 +13,7 @@
         "indent": ["warn", 4],
         "curly": ["warn", "all"],
         "brace-style": ["warn", "1tbs"],
-        "vue/component-name-in-template-casing": ["warn", "kebab-case"],
+        "vue/component-name-in-template-casing": ["warn", "PascalCase"],
         "vue/max-attributes-per-line": "off",
         "vue/html-self-closing": "off",
         "vue/html-indent": ["warn", 4]
