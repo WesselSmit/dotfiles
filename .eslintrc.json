@@ -1,0 +1,21 @@
+{
+    "root": true,
+    "env": {
+        "node": true
+    },
+    "extends": [
+        "plugin:vue/vue3-recommended"
+    ],
+    "rules": {
+        "comma-dangle": ["warn", "always-multiline"],
+        "quotes": ["warn", "single", { "avoidEscape": true }],
+        "semi": ["warn", "never"],
+        "indent": ["warn", 4],
+        "curly": ["warn", "all"],
+        "brace-style": ["warn", "1tbs"],
+        "vue/component-name-in-template-casing": ["warn", "kebab-case"],
+        "vue/max-attributes-per-line": "off",
+        "vue/html-self-closing": "off",
+        "vue/html-indent": ["warn", 4]
+    }
+}
