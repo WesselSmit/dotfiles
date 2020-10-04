@@ -1,8 +1,20 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "editor.minimap.enabled": true,
-    "breadcrumbs.enabled": true,
+    "editor.minimap.enabled": false,
     "editor.minimap.maxColumn": 100,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "eslint.validate": [
+        "vue",
+        "javascript",
+        "javascriptreact"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "vetur.validation.template": false,
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "breadcrumbs.enabled": true,
     "emmet.triggerExpansionOnTab": true,
     "emmet.includeLanguages": {
         "vue-html": "html",
@@ -16,12 +28,11 @@
     "previewServer.ignoreNotification": true,
     "previewServer.isWatchConfiguration": false,
     "cSpell.allowCompoundWords": true,
-    "editor.insertSpaces": false,
     "git.autofetch": true,
     "prettier.arrowParens": "avoid",
     "prettier.semi": false,
     "prettier.tabWidth": 4,
-    "prettier.useTabs": true,
+    "prettier.useTabs": false,
     "prettier.vueIndentScriptAndStyle": true,
     "prettier.withNodeModules": true,
     "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
@@ -35,7 +46,6 @@
     "files.associations": {
         "*.ejs": "html"
     },
-    "editor.formatOnSave": true,
     "[json]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     }
