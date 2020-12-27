@@ -1,0 +1,40 @@
+# This workflow publishes the package to the NPM and GPR registries whenever you create a new release for the repository
+
+name: Publish to NPM and GPR
+
+on:
+  release:
+    types: [created]
+
+jobs:
+ publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - name: Publish to NPMJS
+        run: |
+          npm ci
+          npm publish --access public 
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # replace with your own NPM_TOKEN in repo secrets
+          
+ publish-gpr: # replace '@wesselsmit' with your own github @username
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12
+        registry-url: https://npm.pkg.github.com/
+        scope: '@wesselsmit'
+    - name: Publish to GPR
+      run: |
+        npm ci
+        echo registry=https://npm.pkg.github.com/@wesselsmit >> .npmrc 
+        npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GH_AUTH_TOKEN }} # replace with your own GH_AUTH_TOKEN in repo secrets
