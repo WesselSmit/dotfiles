@@ -7,13 +7,10 @@ module.exports = {
         filename: 'bundle.js'
     },
     mode: 'development',
-    
-    // use to watch for changes
     watch: true,
     watchOptions: {
         ignored: /node_modules/
     },
-    
     module: {
         rules: [
             { // typescript support
