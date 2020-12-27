@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    entry: path.join(__dirname, '/src/scripts/index.ts'), // points to your apps entry file(s)
+    entry: path.join(__dirname, '/src/scripts/index.ts'), // points to your apps .js/.ts entry file(s)
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
