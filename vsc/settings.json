@@ -2,6 +2,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "editor.minimap.enabled": false,
     "editor.minimap.maxColumn": 100,
+    "editor.minimap.renderCharacters": false,
     "editor.insertSpaces": true,
     "editor.detectIndentation": false,
     "eslint.validate": [
