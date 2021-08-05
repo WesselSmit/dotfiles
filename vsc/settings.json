@@ -1,53 +1,70 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.minimap.enabled": false,
-    "editor.minimap.maxColumn": 100,
-    "editor.minimap.renderCharacters": false,
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": false,
-    "eslint.validate": [
-        "vue",
-        "javascript",
-        "javascriptreact"
-    ],
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "vetur.validation.template": false,
-    "vetur.format.defaultFormatter.js": "vscode-typescript",
-    "breadcrumbs.enabled": true,
-    "emmet.triggerExpansionOnTab": true,
-    "emmet.includeLanguages": {
-        "vue-html": "html",
-        "vue": "html"
-    },
-    "workbench.colorTheme": "Horizon",
-    "diffEditor.renderSideBySide": false,
-    "window.zoomLevel": 0,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "merge-conflict.autoNavigateNextConflict.enabled": true,
-    "previewServer.ignoreNotification": true,
-    "previewServer.isWatchConfiguration": false,
-    "cSpell.allowCompoundWords": true,
-    "git.autofetch": true,
-    "prettier.arrowParens": "avoid",
-    "prettier.semi": false,
-    "prettier.tabWidth": 4,
-    "prettier.useTabs": false,
-    "prettier.vueIndentScriptAndStyle": true,
-    "prettier.withNodeModules": true,
-    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
-    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
-    "color-highlight.markerType": "dot-before",
-    "color-highlight.languages": [
-        "!css",
-        "!scss",
-        "*"
-    ],
-    "files.associations": {
-        "*.ejs": "html"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    }
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "editor.minimap.maxColumn": 100,
+  "editor.tabSize": 2,
+  "editor.dragAndDrop": false,
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.minimap.renderCharacters": false,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "window.zoomLevel": 1,
+  "terminal.integrated.tabs.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
+  "breadcrumbs.enabled": true,
+  "files.associations": {
+    "*.ejs": "html",
+    "*.twig": "html"
+  },
+  "[twig]": {
+    "editor.formatOnSave": true
+  },
+  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "python.showStartPage": false,
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "git.autofetch": true,
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "html",
+    "javascript": "javascriptreact"
+  },
+  "emmet.excludeLanguages": [
+    "markdown"
+  ],
+  "previewServer.ignoreNotification": true,
+  "previewServer.isWatchConfiguration": false,
+  "cSpell.allowCompoundWords": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.semi": false,
+  "prettier.tabWidth": 4,
+  "prettier.useTabs": false,
+  "prettier.vueIndentScriptAndStyle": true,
+  "prettier.withNodeModules": true,
+  "color-highlight.markerType": "dot-before",
+  "color-highlight.languages": [
+    "!css",
+    "!scss",
+    "*"
+  ],
+  "eslint.validate": [
+    "vue",
+    "javascript",
+    "javascriptreact"
+  ],
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.scriptInitialIndent": true,
+  "vetur.format.styleInitialIndent": true,
+  "vetur.validation.template": false,
 }
