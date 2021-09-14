@@ -20,6 +20,8 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "breadcrumbs.enabled": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
   "files.associations": {
     "*.ejs": "html",
     "*.twig": "html"
