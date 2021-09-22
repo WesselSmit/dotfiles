@@ -12,6 +12,7 @@
   "editor.minimap.renderCharacters": false,
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
+  "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
