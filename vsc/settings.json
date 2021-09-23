@@ -30,6 +30,9 @@
   "[twig]": {
     "editor.formatOnSave": true
   },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
   "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
   "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
