@@ -26,6 +26,8 @@
   "files.associations": {
     "*.ejs": "html",
     "*.twig": "html"
+    "*.njk": "html",
+    "*.html": "html",
   },
   "[twig]": {
     "editor.formatOnSave": true
