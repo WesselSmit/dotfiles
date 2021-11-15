@@ -1,7 +1,7 @@
 [user]
 	email = wrsmit00@gmail.com
 	name = wesselsmit
-	signinkey = D2975B69
+	signinkey = YOUR_SHORT_GPG_KEY_ID
 [init]
 	defaultBranch = main
 [filter "lfs"]
