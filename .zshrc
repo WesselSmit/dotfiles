@@ -3,6 +3,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # run 'nvm use' to use the node version as specified in the nearests .nvmrc
+# will warn and continue to operate if there is no .nvmrc
 eval "nvm use"
 
 
