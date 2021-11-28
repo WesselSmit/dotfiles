@@ -17,6 +17,10 @@ gpgconf --launch gpg-agent
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 
+# make 'flutter' command globally available
+export PATH="$PATH:/Users/wesselsmit/flutter/bin"
+
+
 # make zsh autocomplete case-insensitive
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list '' '+m:{a-zA-Z}={A-Za-z}' '+r:|[._-]=* r:|=*' '+l:|=* r:|=*'
