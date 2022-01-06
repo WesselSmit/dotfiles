@@ -2,9 +2,20 @@
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-# run 'nvm use' to use the node version as specified in the nearests .nvmrc
-# will warn and continue to operate if there is no .nvmrc
-eval "nvm use"
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+
+  # use default node version if no .nvmrc is found
+    # elif [[ $(nvm version) != $(nvm version default)  ]]; then
+    #   default_node_version=v14
+    #   echo "No .nvmrc found, using node version: $default_node_version"
+    #   nvm use $default_node_version
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
 
 
 # launch gpg on shell startup (necessary for github user verification)
