@@ -18,6 +18,7 @@
   },
   "window.zoomLevel": 1,
   "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.scrollback": 10000,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "breadcrumbs.enabled": true,
