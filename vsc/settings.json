@@ -48,6 +48,7 @@
   "emmet.includeLanguages": {
     "vue-html": "html",
     "vue": "html",
+    "svelte": "html",
     "javascript": "javascriptreact"
   },
   "emmet.excludeLanguages": [
