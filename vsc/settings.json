@@ -27,8 +27,8 @@
   "files.associations": {
     "*.ejs": "html",
     "*.twig": "html"
-    "*.njk": "html",
     "*.html": "html",
+    ".env.*": "env",
   },
   "[twig]": {
     "editor.formatOnSave": true
@@ -49,7 +49,8 @@
     "vue-html": "html",
     "vue": "html",
     "svelte": "html",
-    "javascript": "javascriptreact"
+    "njk": "html"
+    "javascript": "javascriptreact",
   },
   "emmet.excludeLanguages": [
     "markdown"
