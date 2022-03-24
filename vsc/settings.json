@@ -1,83 +1,105 @@
 {
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
-  "editor.minimap.maxColumn": 100,
-  "editor.tabSize": 2,
-  "editor.dragAndDrop": false,
-  "editor.minimap.enabled": false,
-  "editor.wordWrap": "on",
-  "editor.minimap.renderCharacters": false,
-  "editor.insertSpaces": true,
-  "editor.detectIndentation": false,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "window.zoomLevel": 1,
-  "terminal.integrated.tabs.enabled": false,
-  "terminal.integrated.scrollback": 10000,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.renderSideBySide": false,
   "breadcrumbs.enabled": true,
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "files.associations": {
-    "*.ejs": "html",
-    "*.twig": "html"
-    "*.html": "html",
-    ".env.*": "env",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "git.autofetch": true,
+  "prettier.tabWidth": 4,
+  "emmet.includeLanguages": {
+    "vue": "html",
+    "vue-html": "html",
+    "svelte": "html",
+    "javascript": "javascriptreact",
+    "njk": "html"
   },
-  "[twig]": {
-    "editor.formatOnSave": true
-  },
+  "editor.fontLigatures": true,
+  "cSpell.allowCompoundWords": true,
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
-  "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "previewServer.ignoreNotification": true,
   "python.showStartPage": false,
-  "python.defaultInterpreterPath": "/usr/local/bin/python3",
-  "git.autofetch": true,
-  "git.enableCommitSigning": true,
-  "merge-conflict.autoNavigateNextConflict.enabled": true,
-  "emmet.triggerExpansionOnTab": true,
-  "emmet.includeLanguages": {
-    "vue-html": "html",
-    "vue": "html",
-    "svelte": "html",
-    "njk": "html"
-    "javascript": "javascriptreact",
-  },
+  "terminal.integrated.scrollback": 10000,
+  "editor.tabSize": 2,
+  "terminal.integrated.tabs.enabled": false,
+  "prettier.withNodeModules": true,
+  "svelte.enable-ts-plugin": true,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.wordWrap": "on",
   "emmet.excludeLanguages": [
     "markdown"
   ],
-  "previewServer.ignoreNotification": true,
-  "previewServer.isWatchConfiguration": false,
-  "cSpell.allowCompoundWords": true,
+  "workbench.startupEditor": "newUntitledFile",
   "prettier.arrowParens": "avoid",
+  "editor.bracketPairColorization.enabled": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "editor.accessibilitySupport": "off",
+  "dart.hotReloadProgress": "statusBar",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "prettier.requireConfig": true,
   "prettier.semi": false,
-  "prettier.tabWidth": 4,
-  "prettier.useTabs": false,
-  "prettier.vueIndentScriptAndStyle": true,
-  "prettier.withNodeModules": true,
-  "color-highlight.markerType": "dot-before",
   "color-highlight.languages": [
     "!css",
     "!scss",
     "*"
   ],
+  "diffEditor.renderSideBySide": false,
+  "[twig]": {
+    "editor.formatOnSave": true
+  },
+  "vetur.validation.template": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.suggestSelection": "first",
+  "editor.minimap.maxColumn": 100,
+  "svelte.language-server.runtime": "\/Users\/wesselsmit\/.nvm\/versions\/node\/v16.13.1\/bin\/node",
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "prettier.useTabs": false,
+  "git.suggestSmartCommit": false,
+  "dart.flutterHotReloadOnSave": "always",
+  "editor.minimap.enabled": false,
+  "prettier.vueIndentScriptAndStyle": true,
+  "color-highlight.markerType": "dot-before",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.scriptInitialIndent": true,
+  "vetur.format.styleInitialIndent": true,
+  "editor.dragAndDrop": false,
+  "git.enableCommitSigning": true,
+  "editor.fontFamily": "JetBrains Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "workbench.editor.untitled.hint": "hidden",
+  "files.insertFinalNewline": true,
+  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "emmet.triggerExpansionOnTab": true,
+  "editor.detectIndentation": false,
+  "previewServer.isWatchConfiguration": false,
+  "files.trimTrailingWhitespace": true,
+  "editor.insertSpaces": true,
   "eslint.validate": [
     "vue",
     "javascript",
     "javascriptreact"
   ],
-  "vetur.format.defaultFormatter.js": "vscode-typescript",
-  "vetur.format.scriptInitialIndent": true,
-  "vetur.format.styleInitialIndent": true,
-  "vetur.validation.template": false,
+  "editor.minimap.renderCharacters": false,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "files.associations": {
+    "*.html": "html",
+    ".env.*": "env",
+    "*.ejs": "html",
+    "*.twig": "html"
+  },
+  "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+  "[dart]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.selectionHighlight": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.suggestSelection": "first"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
   "htmlEndTagLabels.labelColor": "#ffffff40"
 }
