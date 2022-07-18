@@ -1,3 +1,7 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
+
+
 # launch nvm on shell startup
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -8,10 +12,10 @@ load-nvmrc() {
     nvm use
 
   # use default node version if no .nvmrc is found
-    # elif [[ $(nvm version) != $(nvm version default)  ]]; then
-    #   default_node_version=v14
-    #   echo "No .nvmrc found, using node version: $default_node_version"
-    #   nvm use $default_node_version
+    elif [[ $(nvm version) != $(nvm version default)  ]]; then
+      default_node_version=v14
+      echo "No .nvmrc found, reverting to default node version"
+      nvm use $default_node_version
   fi
 }
 add-zsh-hook chpwd load-nvmrc
@@ -28,11 +32,28 @@ gpgconf --launch gpg-agent
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 
-# make 'flutter' command globally available
-export PATH="$PATH:/Users/wesselsmit/flutter/bin"
+# git aliases
+alias ga="git add"
+alias gaa="git add ."
+alias gf="git fetch"
+alias gs="git status"
+alias gpl="git pull"
+alias gps="git push"
+alias gb="git branch"
+alias gbd="git branch -D"
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gcob="git checkout -b"
+alias gcom="git checkout main"
+alias gcop="git switch -"
+alias gst="git stash -a -m"
+alias gstl="git stash list"
+alias gstp="git stash pop"
 
 
-# make zsh autocomplete case-insensitive
+# zsh automcompletion
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list '' '+m:{a-zA-Z}={A-Za-z}' '+r:|[._-]=* r:|=*' '+l:|=* r:|=*'
 
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
