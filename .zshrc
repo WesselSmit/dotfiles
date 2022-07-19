@@ -47,7 +47,7 @@ alias gco="git checkout"
 alias gcob="git checkout -b"
 alias gcom="git checkout main"
 alias gcop="git switch -"
-alias gst="git stash -a -m"
+alias gst="git stash -u -m"
 alias gstl="git stash list"
 alias gstp="git stash pop"
 
