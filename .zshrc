@@ -52,6 +52,13 @@ alias gstl="git stash list"
 alias gstp="git stash pop"
 
 
+# npm aliases
+alias nr="npm run"
+alias ni="npm install"
+alias nd="npm install -D"
+alias nu="npm uninstall"
+
+
 # zsh automcompletion
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list '' '+m:{a-zA-Z}={A-Za-z}' '+r:|[._-]=* r:|=*' '+l:|=* r:|=*'
