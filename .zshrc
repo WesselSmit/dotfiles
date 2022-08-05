@@ -56,6 +56,7 @@ alias gstp="git stash pop"
 # npm aliases
 alias nr="npm run"
 alias ni="npm install"
+alias nci="npm clean-install"
 alias nd="npm install -D"
 alias nu="npm uninstall"
 
