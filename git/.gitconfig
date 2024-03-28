@@ -34,3 +34,5 @@
     untracked = cyan
 [column]
     ui = always
+[push]
+    autoSetupRemote = true
